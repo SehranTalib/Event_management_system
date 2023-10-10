@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Signup</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    .signup-form {
+      width: 300px;
+      margin: 0 auto;
+    }
+    .signup-form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .signup-form button {
+      background-color: blue;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+    .redirect-message {
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-form">
+    <h1>User Signup</h1>
+    <input type="text" name="name" placeholder="Name">
+    <input type="email" name="email" placeholder="Email">
+    <input type="password" name="password" placeholder="Password">
+    <button type="submit">Signup</button>
+  </div>
+
+  <div class="redirect-message">
+    You will be redirected to the add item page in 10 seconds.
+  </div>
+
+  <meta http-equiv="refresh" content="10; url=file:///D:/library/add%20item.html">
+</body>
+</html>

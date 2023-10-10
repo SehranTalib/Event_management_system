@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vendor Dashboard</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    .dashboard {
+      width: 500px;
+      margin: 0 auto;
+    }
+    .dashboard h1 {
+      text-align: center;
+    }
+    .dashboard .vendor-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    .dashboard .vendor-list li {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .dashboard .vendor-list li .vendor-info {
+      flex: 1;
+    }
+    .dashboard .vendor-list li .vendor-info h3 {
+      margin: 0;
+    }
+    .dashboard .vendor-list li .vendor-info p {
+      margin: 0;
+    }
+    .dashboard .vendor-list li .shop-now-button {
+      background-color: blue;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+    .redirect-message {
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <h1>Vendor Dashboard</h1>
+
+    <ul class="vendor-list">
+      <li>
+        <div class="vendor-info">
+          <h3>Vendor Name 1</h3>
+          <p>Email: vendor1@example.com</p>
+          <p>Phone: 123-456-7890</p>
+        </div>
+        <a href="#" class="shop-now-button">Shop Now</a>
+      </li>
+      <li>
+        <div class="vendor-info">
+          <h3>Vendor Name 2</h3>
+          <p>Email: vendor2@example.com</p>
+          <p>Phone: 123-456-7890</p>
+        </div>
+        <a href="#" class="shop-now-button">Shop Now</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="redirect-message">
+    You will be redirected to the vendor dashboard page in 10 seconds.
+  </div>
+
+  <meta http-equiv="refresh" content="10; url=file:///D:/library/vendors%20details.html">
+</body>
+</html>

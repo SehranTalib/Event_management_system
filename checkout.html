@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Checkout</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    .checkout {
+      width: 500px;
+      margin: 0 auto;
+    }
+    .checkout h1 {
+      text-align: center;
+    }
+    .checkout form {
+      margin-bottom: 10px;
+    }
+    .checkout input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .checkout select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .checkout .payment-options {
+      margin-bottom: 10px;
+    }
+    .checkout .payment-options input {
+      margin-right: 10px;
+    }
+    .checkout .submit-button {
+      background-color: blue;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+    .redirect-message {
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="checkout">
+    <h1>Checkout</h1>
+
+    <form action="/checkout" method="post">
+      <input type="text" name="customer_name" placeholder="Customer Name">
+      <input type="text" name="shipping_address" placeholder="Shipping Address">
+      <input type="text" name="city" placeholder="City">
+      <input type="text" name="state" placeholder="State">
+      <input type="text" name="zip_code" placeholder="Zip Code">
+
+      <select name="payment_option">
+        <option value="cash">Cash</option>
+        <option value="upi">UPI</option>
+        <option value="debit_card">Debit Card</option>
+      </select>
+
+      <input type="submit" value="Submit Order" class="submit-button">
+    </form>
+  </div>
+
+  <div class="redirect-message">
+    You will be redirected to the next page in 10 seconds.
+  </div>
+
+  <meta http-equiv="refresh" content="10; url=file:///D:/library/order%20confirmation3.html">
+</body>
+</html>

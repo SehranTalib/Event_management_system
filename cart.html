@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cart</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    .cart {
+      width: 500px;
+      margin: 0 auto;
+    }
+    .cart h1 {
+      text-align: center;
+    }
+    .cart table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .cart th {
+      background-color: #ccc;
+      padding: 10px;
+    }
+    .cart td {
+      padding: 10px;
+    }
+    .cart .total-amount {
+      font-size: 20px;
+      text-align: right;
+    }
+    .redirect-message {
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="cart">
+    <h1>Cart</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Product 1</td>
+          <td>$100.00</td>
+          <td>1</td>
+          <td>$100.00</td>
+        </tr>
+        <tr>
+          <td>Product 2</td>
+          <td>$200.00</td>
+          <td>2</td>
+          <td>$400.00</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3" class="total-amount">Total: $500.00</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <div class="redirect-message">
+    You will be redirected to the next page in 10 seconds.
+  </div>
+
+  <meta http-equiv="refresh" content="10; url=file:///D:/library/checkout.html">
+</body>
+</html>

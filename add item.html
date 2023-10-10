@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vendor Dashboard</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    .dashboard {
+      width: 500px;
+      margin: 0 auto;
+    }
+    .dashboard h1 {
+      text-align: center;
+    }
+    .dashboard .vendor-name {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .dashboard .product-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    .dashboard .product-list li {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .dashboard .product-list li img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+    .dashboard .product-list li .product-info {
+      flex: 1;
+    }
+    .dashboard .logout-button {
+      background-color: red;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+    .redirect-message {
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <h1>Vendor Dashboard</h1>
+
+    <h2 class="vendor-name">Vendor Name</h2>
+
+    <ul class="product-list">
+      <li>
+        <img src="https://example.com/product-image.jpg" alt="Product Image">
+        <div class="product-info">
+          <h3>Product Name</h3>
+          <p>$100.00</p>
+        </div>
+      </li>
+      <li>
+        <img src="https://example.com/product-image.jpg" alt="Product Image">
+        <div class="product-info">
+          <h3>Product Name</h3>
+          <p>$100.00</p>
+        </div>
+      </li>
+    </ul>
+
+    <a href="#" class="logout-button">Logout</a>
+  </div>
+
+  <div class="redirect-message">
+    You will be redirected to the vendor details page in 10 seconds.
+  </div>
+
+  <meta http-equiv="refresh" content="10; url=file:///D:/library/vendors%20details.html">
+</body>
+</html>

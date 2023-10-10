@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vendor Dashboard</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    .dashboard {
+      width: 500px;
+      margin: 0 auto;
+    }
+    .dashboard h1 {
+      text-align: center;
+    }
+    .dashboard ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    .dashboard li {
+      display: inline-block;
+      width: 25%;
+      padding: 10px;
+      margin: 0 10px;
+    }
+    .dashboard li a {
+      color: blue;
+      text-decoration: none;
+    }
+    .redirect-message {
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <h1>Vendor Dashboard</h1>
+    <ul>
+      <li><a href="#">Your Items</a></li>
+      <li><a href="#">Add Items</a></li>
+      <li><a href="#">Transaction</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+  </div>
+
+  <div class="redirect-message">
+    You will be redirected to the next page in 10 seconds.
+  </div>
+
+  <meta http-equiv="refresh" content="10; url=file:///D:/library/cart.html">
+</body>
+</html>
